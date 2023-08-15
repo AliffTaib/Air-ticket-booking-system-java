@@ -58,6 +58,6 @@ public class Ticket implements Serializable{
 	}
 	
 	public String toString() {
-		return ticketNumber + " " + passenger +" "+ flight +" "+ seatNumber+" " + status;
+		return "  "+ticketNumber + "            " + passenger +"            "+ flight +"            "+ seatNumber+"            " + status;
 }
 	}

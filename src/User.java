@@ -13,6 +13,15 @@ public class User implements Serializable{
 			this.password = password;
 			
 	   }
+	   
+	   public User( String userId, String name, String email) {  //constructor with attributes 
+			
+			this.userId = userId;
+			this.name = name;
+			this.email = email;
+			
+			
+	   }
 public String getUserId() {
 		return userId;
 	}
@@ -37,8 +46,13 @@ public String getUserId() {
 	public void setPassword(int password) {
 		this.password = password;
 	}
+
+public String toStringWp() {
+	return "  " + userId  + "           " + name +"        "+ email +"           "+password +" ";	
+}
+
 public String toString() {
-	return userId  + " " + name +" "+ email +" "+ password+" ";
+	return "  " + userId  + "           " + name +"        "+ email +" ";
 	
 	
 }
